@@ -2,10 +2,17 @@
 # Date: 2025/1/14
 # Function: Read and print each row of the Iris dataset
 
-import csv
+import numpy as np
+import matplotlib.pyplot as plt
+import pandas as pd
+import scipy.stats as stats
 
-# Open Iris.csv
-with open('data/Iris.csv', 'r') as file:
-    reader = csv.reader(file)
-    for row in reader:
-        print(row)
+# Use pandas to read Iris Data
+data = pd.read_csv("data/Iris.csv")
+
+# Print
+print(data.to_string())
+
+
+
+
